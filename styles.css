@@ -1,0 +1,77 @@
+/* Force Streamlit Global Dark Theme & Ensure Readable Text */
+.stApp {
+    background-color: #0E1117;
+    color: #F1F5F9 !important;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: #111827;
+    border-right: 1px solid #1F2937;
+}
+
+[data-testid="stSidebar"] label, [data-testid="stSidebar"] h3, [data-testid="stSidebar"] span {
+    color: #F8FAFC !important;
+}
+
+/* Typography Headers & Subtitles */
+.hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #F8FAFC !important;
+    margin-bottom: 0px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #CBD5E1 !important;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+h3, h4, p {
+    color: #F1F5F9;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background: #1E293B;
+    border: 1px solid #334155;
+    padding: 20px;
+    border-radius: 10px;
+    color: #F1F5F9;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Match Card Styling */
+.match-card {
+    background-color: #1E293B;
+    border-left: 5px solid #3B82F6;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-top: 1px solid #334155;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+    color: #F1F5F9;
+}
+
+.metric-badge {
+    background-color: #3B82F6;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* Remove Streamlit's default top padding gap to align with sidebar */
+.block-container {
+    padding-top: 2rem !important;
+}
+
+/* Make Streamlit's top toolbar transparent and match the dark theme */
+header[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
